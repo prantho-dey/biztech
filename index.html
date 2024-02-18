@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Biztech</title>
+    <link rel="icon" href="./assets/img/favicon.png" type="image/gif" sizes="18x18">
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/plugins.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body class="bg-bg-body dark:bg-dark-body demo-body">
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader-page">
+        <div class="loader">
+            <p class="loader__text">loading</p>
+            <span class="loader__circle"></span>
+            <span class="loader__circle"></span>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Scroll Top Button Start -->
+    <div id="progress"
+        class="h-12 w-12  fixed bottom-[30px] right-8  z-[999999000] shadow-lg cursor-pointer progress flex items-center justify-center rotate-90 bg-transparent">
+        <div id="progress-value"
+            class="h-11 w-11 progress-value text-primary text-[20px] bg-white dark:bg-black  moving-animation flex items-center justify-center">
+            <svg fill="#000000" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
+                <path id="XMLID_29_"
+                    d="M100.606,100.606L150,51.212V315c0,8.284,6.716,15,15,15c8.284,0,15-6.716,15-15V51.212l49.394,49.394
+            C232.322,103.535,236.161,105,240,105c3.839,0,7.678-1.465,10.606-4.394c5.858-5.857,5.858-15.355,0-21.213l-75-75
+            c-5.857-5.858-15.355-5.858-21.213,0l-75,75c-5.858,5.857-5.858,15.355,0,21.213C85.251,106.463,94.749,106.463,100.606,100.606z" />
+            </svg>
+        </div>
+    </div>
+    <!-- Scroll Top Button End -->
+
+    <div data-scroll-container>
+
+        <section class="pt-[70px] sm:pt-[100px] lg:pt-[152px] pb-12 sm:pb-[70px] lg:pb-[112px] relative overflow-hidden z-[1] demo-banner"
+            data-scroll-section>
+            <svg class="absolute top-[5%] right-[5%] " width="89" height="90" viewBox="0 0 89 90" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="1.20464" cy="1.20269" r="1.20269" fill="white" />
+                <circle cx="22.8521" cy="1.20269" r="1.20269" fill="white" />
+                <circle cx="44.4996" cy="1.20269" r="1.20269" fill="white" />
+                <circle cx="66.148" cy="1.20269" r="1.20269" fill="white" />
+                <circle cx="87.7964" cy="1.20269" r="1.20269" fill="white" />
+                <circle cx="1.20269" cy="22.8492" r="1.20269" fill="white" />
+                <circle cx="22.8511" cy="22.8492" r="1.20269" fill="white" />
+                <circle cx="44.4986" cy="22.8492" r="1.20269" fill="white" />
+                <circle cx="66.147" cy="22.8492" r="1.20269" fill="white" />
+                <circle cx="87.7955" cy="22.8492" r="1.20269" fill="white" />
+                <circle cx="1.20269" cy="44.4996" r="1.20269" fill="white" />
+                <circle cx="22.8511" cy="44.4996" r="1.20269" fill="white" />
+                <circle cx="44.4986" cy="44.4996" r="1.20269" fill="white" />
+                <circle cx="66.147" cy="44.4996" r="1.20269" fill="white" />
+                <circle cx="87.7955" cy="44.4996" r="1.20269" fill="white" />
+                <circle cx="1.20269" cy="66.148" r="1.20269" fill="white" />
+                <circle cx="22.8511" cy="66.148" r="1.20269" fill="white" />
+                <circle cx="44.4986" cy="66.148" r="1.20269" fill="white" />
+                <circle cx="66.147" cy="66.148" r="1.20269" fill="white" />
+                <circle cx="87.7955" cy="66.148" r="1.20269" fill="white" />
+                <circle cx="1.20269" cy="87.7984" r="1.20269" fill="white" />
+                <circle cx="22.8511" cy="87.7964" r="1.20269" fill="white" />
+                <circle cx="44.4986" cy="87.7964" r="1.20269" fill="white" />
+                <circle cx="66.147" cy="87.7964" r="1.20269" fill="white" />
+                <circle cx="87.7955" cy="87.7964" r="1.20269" fill="white" />
+            </svg>
+            <svg class="fill-current text-text-black dark:text-white absolute -z-[1] bottom-[7%] left-[45%] rounded-image"
+                width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" data-scroll
+                data-scroll-speed="3" data-scroll-position="top">
+                <path
+                    d="M34.3038 1.01587C32.4051 0.888889 30.3797 0.634921 28.481 2.53968C26.5823 4.44444 26.8354 6.47619 26.962 8.38095C27.0886 10.1587 27.3418 11.6825 25.9494 13.0794C24.557 14.4762 23.038 14.3492 21.2658 14.0952C19.3671 13.9683 17.3418 13.7143 15.443 15.619C13.5443 17.5238 13.7975 19.5556 13.9241 21.4603C14.0506 23.2381 14.3038 24.7619 12.9114 26.1587C11.519 27.5556 10 27.4286 8.22785 27.1746C6.32911 27.0476 4.3038 26.7937 2.40506 28.6984C0.506329 30.6032 0.759494 32.6349 0.886076 34.5397C1.13924 36.1905 1.26582 37.7143 0 38.9841L1.01266 40C2.78481 38.2222 2.53165 36.0635 2.40506 34.2857C2.27848 32.5079 2.02532 30.9841 3.41772 29.5873C4.81013 28.1905 6.32911 28.3175 8.10127 28.5714C10 28.6984 12.0253 28.9524 13.9241 27.0476C15.8228 25.1429 15.5696 23.1111 15.443 21.2064C15.3165 19.4286 15.0633 17.9048 16.4557 16.5079C17.8481 15.1111 19.3671 15.2381 21.1392 15.4921C23.038 15.619 25.0633 15.873 26.962 13.9683C28.8608 12.0635 28.6076 10.0317 28.481 8.12698C28.3544 6.34921 28.1013 4.8254 29.4937 3.42857C30.8861 2.03175 32.4051 2.15873 34.1772 2.4127C36.076 2.53968 38.1013 2.79365 40 0.888889L38.8608 0C37.4684 1.39683 35.9494 1.26984 34.3038 1.01587Z" />
+            </svg>
+            <svg class="stroke-current text-text-black dark:text-white absolute -z-[1] top-[7%] left-[45%] rounded-image"
+                width="29" height="26" viewBox="0 0 29 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="14.8906" y1="1" x2="14.8906" y2="9.39996" stroke-width="2" stroke-linecap="round" />
+                <line x1="14.8906" y1="16.5996" x2="14.8906" y2="24.9996" stroke-width="2" stroke-linecap="round" />
+                <line x1="27.1904" y1="12.6992" x2="18.7905" y2="12.6992" stroke-width="2" stroke-linecap="round" />
+                <line x1="10.29" y1="12.6992" x2="1.89008" y2="12.6992" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <img class="absolute -z-[1] top-0 right-0 w-1/2 xl:w-[40%]" src="./assets/img/demo-page/banner-shape-01.png"
+                alt="shape">
+            <img class="absolute -z-[1] w-[10%] bottom-[10%] left-0 " src="./assets/img/demo-page/banner-shape-03.png"
+                alt="shape" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2"
+                data-scroll-position="top">
+            <div data-scroll>
+                <div class="max-w-[1605px] ml-auto flex items-start px-5 flex-col md:flex-row gap-10 md:gap-0"
+                    data-scroll>
+                    <div class="max-w-[800px] w-full" data-scroll>
+                        <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="1"
+                            data-scroll-position="top">
+                            <svg class="fill-current text-text-black dark:text-white w-[200px] sm:w-[250px] 2xl:w-[343px]"
+                                viewBox="0 0 348 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M110.167 30.2949C113.866 30.2949 117.162 31.1011 120.055 32.7136C122.996 34.326 125.296 36.6024 126.956 39.5428C128.615 42.4831 129.445 45.874 129.445 49.7155C129.445 53.5569 128.615 56.9715 126.956 59.9593C125.296 62.8996 122.996 65.176 120.055 66.7885C117.162 68.4009 113.866 69.2071 110.167 69.2071C107.559 69.2071 105.164 68.7566 102.982 67.8555C100.848 66.9545 99.0459 65.6028 97.5757 63.8007V68.7092H89.1104V15.9251H98.0025V35.3457C99.5201 33.6858 101.299 32.429 103.338 31.5754C105.425 30.7217 107.701 30.2949 110.167 30.2949ZM109.171 61.5954C112.443 61.5954 115.123 60.5047 117.21 58.3231C119.344 56.1416 120.411 53.2723 120.411 49.7155C120.411 46.1586 119.344 43.2894 117.21 41.1078C115.123 38.9263 112.443 37.8355 109.171 37.8355C107.037 37.8355 105.116 38.3335 103.409 39.3294C101.702 40.2779 100.35 41.6532 99.3542 43.4554C98.3582 45.2575 97.8603 47.3442 97.8603 49.7155C97.8603 52.0867 98.3582 54.1734 99.3542 55.9756C100.35 57.7777 101.702 59.1768 103.409 60.1727C105.116 61.1212 107.037 61.5954 109.171 61.5954Z" />
+                                <path
+                                    d="M137.878 30.7217H146.771V68.7092H137.878V30.7217ZM142.36 24.4616C140.748 24.4616 139.396 23.9637 138.305 22.9678C137.215 21.9244 136.669 20.6439 136.669 19.1263C136.669 17.6087 137.215 16.352 138.305 15.356C139.396 14.3127 140.748 13.791 142.36 13.791C143.973 13.791 145.324 14.289 146.415 15.2849C147.506 16.2334 148.051 17.4427 148.051 18.9129C148.051 20.4779 147.506 21.8058 146.415 22.8966C145.372 23.94 144.02 24.4616 142.36 24.4616Z" />
+                                <path
+                                    d="M188.106 61.5954V68.7092H155.312V63.0893L176.155 37.8355H155.738V30.7217H187.537V36.3416L166.622 61.5954H188.106Z" />
+                                <path
+                                    d="M219.277 66.6462C218.234 67.4998 216.953 68.1401 215.436 68.5669C213.965 68.9937 212.4 69.2071 210.74 69.2071C206.567 69.2071 203.342 68.1164 201.066 65.9348C198.789 63.7533 197.651 60.5758 197.651 56.4024V38.12H191.391V31.0063H197.651V22.3275H206.543V31.0063H216.716V38.12H206.543V56.189C206.543 58.0386 206.994 59.4613 207.895 60.4572C208.796 61.4057 210.1 61.88 211.808 61.88C213.799 61.88 215.459 61.3583 216.787 60.315L219.277 66.6462Z" />
+                                <path
+                                    d="M261.053 49.9289C261.053 50.5454 261.005 51.4228 260.91 52.561H231.104C231.625 55.359 232.977 57.588 235.158 59.2479C237.387 60.8603 240.138 61.6666 243.41 61.6666C247.584 61.6666 251.022 60.2912 253.725 57.5406L258.492 63.0182C256.784 65.0575 254.626 66.5988 252.018 67.6421C249.41 68.6855 246.469 69.2071 243.197 69.2071C239.024 69.2071 235.348 68.3772 232.171 66.7173C228.993 65.0575 226.527 62.7573 224.772 59.817C223.065 56.8292 222.211 53.462 222.211 49.7155C222.211 46.0163 223.041 42.6966 224.701 39.7562C226.409 36.7684 228.756 34.4446 231.744 32.7847C234.732 31.1249 238.099 30.2949 241.845 30.2949C245.545 30.2949 248.841 31.1249 251.733 32.7847C254.674 34.3972 256.95 36.6973 258.563 39.6851C260.223 42.6254 261.053 46.04 261.053 49.9289ZM241.845 37.4087C239 37.4087 236.581 38.2623 234.589 39.9696C232.645 41.6295 231.459 43.8585 231.032 46.6565H252.587C252.208 43.9059 251.046 41.6769 249.101 39.9696C247.157 38.2623 244.738 37.4087 241.845 37.4087Z" />
+                                <path
+                                    d="M287.023 69.2071C283.086 69.2071 279.553 68.3772 276.423 66.7173C273.293 65.0575 270.851 62.7573 269.096 59.817C267.341 56.8292 266.464 53.462 266.464 49.7155C266.464 45.9689 267.341 42.6254 269.096 39.6851C270.851 36.7447 273.269 34.4446 276.352 32.7847C279.482 31.1249 283.039 30.2949 287.023 30.2949C290.769 30.2949 294.042 31.0537 296.84 32.5713C299.685 34.0889 301.819 36.2705 303.242 39.116L296.413 43.0997C295.322 41.3449 293.947 40.0408 292.287 39.1871C290.674 38.286 288.896 37.8355 286.952 37.8355C283.632 37.8355 280.881 38.9263 278.7 41.1078C276.518 43.2419 275.427 46.1112 275.427 49.7155C275.427 53.3198 276.494 56.2127 278.628 58.3942C280.81 60.5284 283.584 61.5954 286.952 61.5954C288.896 61.5954 290.674 61.1686 292.287 60.315C293.947 59.4139 295.322 58.086 296.413 56.3313L303.242 60.315C301.772 63.1605 299.614 65.3657 296.769 66.9307C293.97 68.4483 290.722 69.2071 287.023 69.2071Z" />
+                                <path
+                                    d="M332.136 30.2949C336.926 30.2949 340.767 31.694 343.66 34.492C346.553 37.2901 348 41.4398 348 46.9411V68.7092H339.108V48.0793C339.108 44.7595 338.325 42.2697 336.76 40.6099C335.195 38.9026 332.966 38.0489 330.073 38.0489C326.801 38.0489 324.216 39.0448 322.319 41.0367C320.422 42.9811 319.474 45.8029 319.474 49.502V68.7092H310.581V15.9251H319.474V35.1323C320.944 33.5672 322.746 32.3816 324.88 31.5754C327.062 30.7217 329.48 30.2949 332.136 30.2949Z" />
+                                <path
+                                    d="M44.8724 23.3105V54.4882C44.8724 65.4324 37.0401 74.5351 26.6729 76.5223C31.7021 80.421 38.0133 82.752 44.8724 82.752C61.2888 82.752 74.5932 69.4476 74.5932 53.0313C74.5932 36.6149 61.2888 23.3105 44.8724 23.3105Z"
+                                    fill="#E31749" />
+                                <path
+                                    d="M15.1517 53.0311C15.1517 36.6148 28.4561 23.3104 44.8725 23.3104V22.4362C44.8725 10.0468 34.8257 0 22.4362 0C10.0468 0 0 10.0468 0 22.4362V54.488C0 66.8774 10.0468 76.9242 22.4362 76.9242C23.8873 76.9242 25.2976 76.7844 26.6729 76.5221C19.6681 71.085 15.1517 62.5883 15.1517 53.0311Z"
+                                    fill="#2D61F3" />
+                                <path
+                                    d="M44.8721 54.4882V23.3105C28.4558 23.3105 15.1514 36.6149 15.1514 53.0313C15.1514 62.5885 19.6678 71.0851 26.6725 76.5223C37.0398 74.5351 44.8721 65.4324 44.8721 54.4882Z"
+                                    fill="#F1AA15" />
+                            </svg>
+                        </div>
+                        <div class="mt-[60px] lg:mt-[100px]" data-scroll>
+                            <h1 class="font-bold text-5xl 2xl:text-[66px] leading-tight" data-scroll
+                                data-scroll-speed="1" data-scroll-position="top">For Multipurpose Business</h1>
+                            <p class="text-primary font-medium text-2xl sm:leading-none sm:text-3xl xl:text-5xl leading-none mt-5"
+                                data-scroll data-scroll-speed="2" data-scroll-position="top">HTML Templates</p>
+                            <div class="flex items-center gap-7 mt-12 lg:mt-24" data-scroll data-scroll-speed="2"
+                                data-scroll-position="top">
+                                <div>
+                                    <span
+                                        class="text-6xl sm:leading-none sm:text-[70px] lg:leading-none xl:leading-none lg:text-[100px] 2xl:text-[170px] font-extrabold leading-none text-text-black dark:text-white">05</span>
+                                    <h2
+                                        class="font-medium text-lg sm:leading-none sm:text-xl lg:leading-none lg:text-2xl xl:leading-none 2xl:leading-none xl:text-3xl 2xl:text-4xl leading-none mt-6">
+                                        Home Pages</h2>
+                                </div>
+                                <svg class="fill-current text-text-black dark:text-white h-[70px] sm:h-[100px] xl:h-[160px]xl:w-[60px] "
+                                    viewBox="0 0 63 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="60.1768" width="2" height="203.283" transform="rotate(17.219 60.1768 0)" />
+                                </svg>
+                                <div>
+                                    <span
+                                        class="text-6xl sm:leading-none sm:text-[70px] lg:leading-none xl:leading-none lg:text-[100px] 2xl:text-[170px] font-extrabold leading-none text-text-black dark:text-white flex items-start gap-2">30<sup
+                                            class="text-3xl sm:leading-none sm:text-5xl 2xl:leading-none 2xl:text-[76px] leading-none font-normal mt-3">+</sup></span>
+                                    <h2
+                                        class="font-medium text-lg sm:leading-none sm:text-xl lg:leading-none lg:text-2xl xl:leading-none 2xl:leading-none xl:text-3xl 2xl:text-4xl leading-none mt-6">
+                                        Inner Pages</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-w-[765px] w-full md:relative z-[1]" data-scroll>
+                        <img class="hidden md:block absolute -top-[17%] xl:-top-[12%] right-[23%] xl:right-[35%] -z-[1]"
+                            src="./assets/img/demo-page/banner-shape-02.png" alt="shape" data-scroll
+                            data-scroll-speed="1" data-scroll-position="top">
+                        <div class="flex lg:justify-center lg:max-w-[500px] absolute md:relative top-5 md:top-0 right-5 md:ring-0"
+                            data-scroll data-scroll-direction="horizontal" data-scroll-speed="-4"
+                            data-scroll-position="left">
+                            <div class="demoDarkLight-button">
+                                <label class="dark-light-switcher flex">
+                                    <input type="checkbox" name="darklight" class="hidden">
+                                    <span
+                                        class="p-[15px] rounded-l-[20px] bg-dark-body text-white text-xl md:leading-none md:text-3xl font-medium leading-none">Dark</span>
+                                    <span
+                                        class="p-[15px] rounded-r-[20px] bg-white text-text-black md:leading-none text-xl md:text-3xl font-medium leading-none">Light</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div data-scroll data-scroll-speed="-1" data-scroll-position="top">
+                            <img class="dark:hidden" src="./assets/img/demo-page/banner-light-thumb.png" alt="light">
+                            <img class="hidden dark:block" src="./assets/img/demo-page/banner-dark-thumb.png"
+                                alt="dark">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pageses Start Here -->
+        <section class="demo-pages-area py-[50px] sm:py-[70px] lg:py-[100px]" data-scroll-section id="target-home">
+            <div class="container">
+                <div class="max-w-[1366px] mx-auto">
+                    <div class="home-demo">
+                        <div class="flex items-center sm:gap-5 mb-[50px] demo-heading">
+                            <div
+                                class="absolute sm:relative text-[150px] leading-none text-primary/[0.06] font-extrabold dark:text-white/20 flex items-center demo-heading-left">
+                                <span>0</span>
+                                <span>5</span>
+                            </div>
+                            <div class="demo-heading-text">
+                                <h3 class="text-3xl leading-none font-bold">Home Pages</h3>
+                                <p class="text-primary leading-none font-medium text-lg mt-4">Full Responsive & Retina
+                                    Ready</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-5 md:gap-[30px]">
+                            <div class="single-card-sttr">
+                                <a href="home-v1.html"
+                                    class="home-page-card w-full rounded-[20px] overflow-hidden block">
+                                    <img class="w-full" src="./assets/img/demo-page/home/home-01.jpg" alt="home">
+                                </a>
+                            </div>
+                            <div class="single-card-sttr">
+                                <a href="home-v2.html"
+                                    class="home-page-card w-full rounded-[20px] overflow-hidden block">
+                                    <img class="w-full" src="./assets/img/demo-page/home/home-05.jpg" alt="home">
+                                </a>
+                            </div>
+                            <div class="single-card-sttr">
+                                <a href="home-v3.html"
+                                    class="home-page-card w-full rounded-[20px] overflow-hidden block">
+                                    <img class="w-full" src="./assets/img/demo-page/home/home-03.jpg" alt="home">
+                                </a>
+                            </div>
+                            <div class="single-card-sttr">
+                                <a href="home-v4.html"
+                                    class="home-page-card w-full rounded-[20px] overflow-hidden block">
+                                    <img class="w-full" src="./assets/img/demo-page/home/home-04.jpg" alt="home">
+                                </a>
+                            </div>
+                            <div class="single-card-sttr">
+                                <a href="home-v5.html"
+                                    class="home-page-card w-full rounded-[20px] overflow-hidden block">
+                                    <img class="w-full" src="./assets/img/demo-page/home/home-02.jpg" alt="home">
+                                </a>
+                            </div>
+                            <div class="single-card-sttr">
+                                <a href="#" class="home-page-card w-full rounded-[20px] overflow-hidden block">
+                                    <img class="w-full" src="./assets/img/demo-page/home/home-06.jpg" alt="home">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-[100px] lg:mt-[200px] inner-demo" id="target-inner">
+                        <div class="flex items-center sm:gap-5 mb-[50px] demo-heading-two">
+                            <span
+                                class="absolute sm:relative text-[150px] leading-none text-primary/[0.06] font-extrabold dark:text-white/20 demo-heading-left-two">30</span>
+                            <div class="demo-heading-text-two">
+                                <h3 class="text-3xl leading-none font-bold">Inner Pages</h3>
+                                <p class="text-primary leading-none font-medium text-lg mt-4">Full Responsive & Retina
+                                    Ready</p>
+                            </div>
+                        </div>
+                        <div
+                            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-y-[60px] md:gap-x-[30px]">
+                            <div class="single-card-sttr-two">
+                                <a href="about.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-01.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">About
+                                        Us</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="team.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-02.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Team
+                                        Member</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="service.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-03.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Services</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="pricing-plan.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-04.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Price
+                                        Table</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="blog.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-05.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Blog
+                                        Post</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="blog-details-v3.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-06.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Blog
+                                        Details With sidebar</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="blog-details-v1.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-07.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Blog
+                                        Details - 1</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="blog-details-v2.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-08.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Blog
+                                        Details -2</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="protfolio-v1.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-09.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Portfolio
+                                        - 1</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="protfolio-v3.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-10.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Portfolio
+                                        - 2</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="protfolio-v4.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-11.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Portfolio
+                                        - 3</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="protfolio-v5.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-12.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Portfolio
+                                        - 4</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="contact.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-13.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Contact
+                                        Us</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="faq.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-14.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">FAQs</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="privacy-policy.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-15.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Privacy
+                                        Policy</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="support-and-help.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-16.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Support
+                                        & Help</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="user-profile.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-17.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">User
+                                        Profile</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="login.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-18.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Login</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="sign-up.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-19.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Register</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="forget-pass.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-19.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Forget
+                                        Password</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="maintenance.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-20.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Maintenance</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="thank-you.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-21.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Thank
+                                        You</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="coming-soon.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-22.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Coming
+                                        Soon</span>
+                                </a>
+                            </div>
+                            <div class="single-card-sttr-two">
+                                <a href="error.html" class="text-center inner-page-card">
+                                    <img class="w-full rounded-xl"
+                                        src="./assets/img/demo-page/inner-page/inner-page-23.jpg" alt="inner-page">
+
+                                    <span
+                                        class="text-lg font-medium text-text-black dark:text-white text-center block mt-5">Error</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pageses Start End -->
+
+        <!-- Why Chose Start -->
+        <section class="py-[50px] sm:py-[70px] lg:py-[100px] bg-[#0A1C35] relative z-[1] target-demo-trested"
+            data-scroll-section>
+            <img class="w-[80%] md:w-auto absolute bottom-0 left-[2%] -z-[1]"
+                src="./assets/img/demo-page/why-chose-shape.png" alt="shape">
+            <div class="container">
+                <div
+                    class="flex items-center lg:items-start gap-10 justify-between max-w-[1100px] mx-auto flex-col lg:flex-row">
+                    <div class="max-w-[681px] w-full demo-trasted-content">
+                        <h3 class="font-semibold text-2xl sm:leading-none sm:text-3xl leading-none dtc-stgr text-white">
+                            Why your Choose Us ?</h3>
+                        <h2 class="text-white text-5xl sm:text-7xl leading-none font-light mt-[30px] dtc-stgr">We have
+                            hundreds of thousands <span class="gradient-text font-bold">Trusted customers.</span></h2>
+                        <ul class="grid sm:grid-cols-2 gap-5 text-lg text-white mt-8 sm:mt-12 dtc-stgr">
+                            <li class="flex items-start gap-[10px]">
+                                <svg class="mt-1" width="24" height="16" viewBox="0 0 24 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23.7071 8.70711C24.0976 8.31658 24.0976 7.68342 23.7071 7.2929L17.3431 0.928934C16.9526 0.538409 16.3195 0.538409 15.9289 0.928934C15.5384 1.31946 15.5384 1.95262 15.9289 2.34315L21.5858 8L15.9289 13.6569C15.5384 14.0474 15.5384 14.6805 15.9289 15.0711C16.3195 15.4616 16.9526 15.4616 17.3431 15.0711L23.7071 8.70711ZM-8.74228e-08 9L23 9L23 7L8.74228e-08 7L-8.74228e-08 9Z"
+                                        fill="white" />
+                                </svg>
+                                <span class="flex-1">Free Lifetime Update</span>
+                            </li>
+                            <li class="flex items-start gap-[10px]">
+                                <svg class="mt-1" width="24" height="16" viewBox="0 0 24 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23.7071 8.70711C24.0976 8.31658 24.0976 7.68342 23.7071 7.2929L17.3431 0.928934C16.9526 0.538409 16.3195 0.538409 15.9289 0.928934C15.5384 1.31946 15.5384 1.95262 15.9289 2.34315L21.5858 8L15.9289 13.6569C15.5384 14.0474 15.5384 14.6805 15.9289 15.0711C16.3195 15.4616 16.9526 15.4616 17.3431 15.0711L23.7071 8.70711ZM-8.74228e-08 9L23 9L23 7L8.74228e-08 7L-8.74228e-08 9Z"
+                                        fill="white" />
+                                </svg>
+                                <span class="flex-1">Modern & Professional Design</span>
+                            </li>
+                            <li class="flex items-start gap-[10px]">
+                                <svg class="mt-1" width="24" height="16" viewBox="0 0 24 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23.7071 8.70711C24.0976 8.31658 24.0976 7.68342 23.7071 7.2929L17.3431 0.928934C16.9526 0.538409 16.3195 0.538409 15.9289 0.928934C15.5384 1.31946 15.5384 1.95262 15.9289 2.34315L21.5858 8L15.9289 13.6569C15.5384 14.0474 15.5384 14.6805 15.9289 15.0711C16.3195 15.4616 16.9526 15.4616 17.3431 15.0711L23.7071 8.70711ZM-8.74228e-08 9L23 9L23 7L8.74228e-08 7L-8.74228e-08 9Z"
+                                        fill="white" />
+                                </svg>
+                                <span class="flex-1">Best Support Team 24 hour</span>
+                            </li>
+                            <li class="flex items-start gap-[10px]">
+                                <svg class="mt-1" width="24" height="16" viewBox="0 0 24 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23.7071 8.70711C24.0976 8.31658 24.0976 7.68342 23.7071 7.2929L17.3431 0.928934C16.9526 0.538409 16.3195 0.538409 15.9289 0.928934C15.5384 1.31946 15.5384 1.95262 15.9289 2.34315L21.5858 8L15.9289 13.6569C15.5384 14.0474 15.5384 14.6805 15.9289 15.0711C16.3195 15.4616 16.9526 15.4616 17.3431 15.0711L23.7071 8.70711ZM-8.74228e-08 9L23 9L23 7L8.74228e-08 7L-8.74228e-08 9Z"
+                                        fill="white" />
+                                </svg>
+                                <span class="flex-1">Developer Friendly Code & Design</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="sm:max-w-[533px] w-full text-right relative z-[1] pb-[50px] group overflow-hidden demo-trasted-image">
+                        <img class="hidden sm:block absolute bottom-0 left-0 -z-[1] duration-700 group-hover:-translate-y-20 group-hover:transform group-hover:translate-x-20 group-hover:opacity-0 transition-all"
+                            src="./assets/img/demo-page/why-chose.png" alt="why-chose">
+                        <div
+                            class="bg-[#1D4ED8] rounded-[30px] px-5 py-8 sm:p-10 text-left sm:max-w-[483px] lg:max-w-[420px] xl:max-w-[483px] ml-auto">
+                            <h2 class="text-white text-3xl sm:leading-none sm:text-5xl leading-none font-semibold">Hire
+                                Developer & Designer</h2>
+                            <p class="text-white sm:text-lg mt-3 sm:mt-5">Just give us the details about the project our
+                                developer & designer will get it done faster, Better, and could possibly imagine.
+                            </p>
+                            <a class="font-medium text-text-black font-lg leading-none py-[17px] px-[53px] rounded-xl mt-5 sm:mt-[30px] bg-white inline-block"
+                                href="#">Hire Expert</a>
+                            <div class="mt-5 sm:mt-8">
+                                <h5 class="text-xl font-semibold leading-none text-white">Email Us</h5>
+                                <a class="text-white leading-none inline-block mt-3" href="#">demomail@gmail.com</a>
+                            </div>
+                            <ul class="flex items-center justify-end gap-6 mt-4 sm:mt-6">
+                                <li>
+                                    <a href="#" class="text-white/30 transition-all duration-300 hover:text-white">
+                                        <svg class="fill-current " width="10" height="20" viewBox="0 0 10 20"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.13725 3.31319H9.95479V0.148145C9.07551 0.0511932 8.19146 0.00404003 7.30686 0.00691128C6.69501 -0.0282217 6.08287 0.0708961 5.51336 0.297317C4.94385 0.523739 4.43075 0.871985 4.01001 1.31765C3.58928 1.76331 3.27109 2.2956 3.07776 2.87722C2.88443 3.45883 2.82063 4.0757 2.89083 4.68457V7.47253H0V11.0118H2.89083V19.9096H6.43552V11.0118H9.21055L9.65116 7.47253H6.43552V5.03483C6.43693 4.0123 6.71232 3.31319 8.13725 3.31319Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white/30 transition-all duration-300 hover:text-white">
+                                        <svg class="fill-current" width="21" height="18" viewBox="0 0 21 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20.7221 2.36648C19.973 2.71482 19.1807 2.94621 18.3697 3.05353C19.2239 2.51277 19.8626 1.65667 20.1649 0.647304C19.365 1.15348 18.4898 1.50999 17.5773 1.7014C17.0173 1.06492 16.291 0.622706 15.4925 0.432154C14.694 0.241602 13.8603 0.311506 13.0995 0.632799C12.3387 0.954093 11.686 1.51194 11.2261 2.23394C10.7662 2.95594 10.5203 3.80876 10.5203 4.68173C10.5169 5.01541 10.5485 5.34844 10.6144 5.67465C8.99115 5.59036 7.40284 5.14164 5.95323 4.35779C4.50362 3.57394 3.22532 2.4726 2.20185 1.12573C1.67677 2.08366 1.51416 3.2193 1.74722 4.30081C1.98028 5.38231 2.59144 6.32814 3.45594 6.94521C2.80997 6.92663 2.17766 6.74263 1.61229 6.40875V6.45581C1.61337 7.46135 1.93907 8.4358 2.5346 9.21516C3.13012 9.99453 3.95911 10.5312 4.88204 10.7349C4.53278 10.8329 4.17285 10.8809 3.81173 10.8777C3.55222 10.8828 3.29294 10.8581 3.0384 10.8039C3.30166 11.6685 3.80989 12.4246 4.49297 12.968C5.17606 13.5114 6.00034 13.8152 6.85212 13.8376C5.40622 15.0425 3.62339 15.6953 1.78872 15.6917C1.46245 15.6941 1.13638 15.6741 0.8125 15.6321C2.67937 16.9137 4.85421 17.5909 7.07412 17.5818C8.60227 17.5929 10.1173 17.2799 11.5311 16.6611C12.9449 16.0422 14.2294 15.1299 15.31 13.977C16.3906 12.8241 17.2457 11.4536 17.8258 9.94516C18.4058 8.43672 18.6991 6.82036 18.6888 5.18995C18.6888 4.99701 18.6888 4.81192 18.6741 4.62683C19.4799 4.01254 20.1739 3.24655 20.7221 2.36648Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white/30 transition-all duration-300 hover:text-white">
+                                        <svg class="fill-current" width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19.1085 5.46283C19.0934 4.6925 18.9472 3.93036 18.6763 3.20905C18.4373 2.59165 18.072 2.0309 17.6038 1.56265C17.1357 1.09439 16.575 0.72894 15.9576 0.489639C15.2361 0.219117 14.4738 0.0730301 13.7034 0.0576046C12.7071 0.0108009 12.3914 0 9.86834 0C7.34526 0 7.02957 0.0108009 6.0369 0.0540043C5.26643 0.069151 4.50415 0.215247 3.78269 0.486039C3.1608 0.720939 2.59817 1.08967 2.13464 1.56612C1.66302 2.0303 1.29773 2.59125 1.06395 3.21025C0.795162 3.93036 0.650275 4.69076 0.635435 5.45923C0.585022 6.45411 0.574219 6.76974 0.574219 9.29354C0.574219 11.8173 0.585022 12.1318 0.628233 13.123C0.643336 13.8934 0.789462 14.6555 1.06035 15.3768C1.29956 15.9943 1.66502 16.5552 2.13337 17.0234C2.60172 17.4917 3.16265 17.8571 3.78029 18.0962C4.50259 18.367 5.26565 18.5131 6.0369 18.5283C7.02837 18.5715 7.34406 18.5823 9.86714 18.5823C12.3902 18.5823 12.7059 18.5715 13.6974 18.5283C14.4679 18.5132 15.2302 18.3671 15.9516 18.0962C16.5694 17.8574 17.1305 17.4921 17.5989 17.0238C18.0673 16.5555 18.4327 15.9945 18.6715 15.3768C18.942 14.6554 19.0881 13.8933 19.1037 13.123C19.1469 12.1318 19.1577 11.8161 19.1577 9.29354C19.1577 6.77094 19.1577 6.45531 19.1109 5.46403L19.1085 5.46283ZM17.44 13.0498C17.4341 13.6388 17.3261 14.2223 17.1207 14.7744C16.9658 15.1751 16.7288 15.5391 16.4249 15.8429C16.1211 16.1467 15.7571 16.3836 15.3562 16.5385C14.804 16.7435 14.2204 16.8515 13.6314 16.8577C12.6507 16.9009 12.3566 16.9117 9.87675 16.9117C7.39687 16.9117 7.09919 16.9009 6.12213 16.8577C5.53303 16.8519 4.94941 16.7439 4.39726 16.5385C3.99397 16.3904 3.62924 16.1533 3.33017 15.8449C3.02246 15.5452 2.78544 15.1807 2.63638 14.778C2.43098 14.2259 2.32255 13.6424 2.31589 13.0534C2.27268 12.073 2.26188 11.7789 2.26188 9.29954C2.26188 6.82014 2.27268 6.52252 2.31589 5.54564C2.32173 4.95666 2.42977 4.37315 2.63518 3.8211C2.78305 3.41948 3.02028 3.05671 3.32897 2.76022C3.62849 2.45235 3.99308 2.21534 4.39606 2.06656C4.94834 1.86166 5.53188 1.75366 6.12093 1.74734C7.10159 1.70414 7.39567 1.69333 9.87555 1.69333C12.3554 1.69333 12.6531 1.70414 13.6302 1.74734C14.2193 1.75323 14.8029 1.86124 15.355 2.06656C15.7584 2.21465 16.1231 2.45174 16.4221 2.76022C16.7298 3.05986 16.9668 3.42433 17.1159 3.8271C17.322 4.37747 17.4316 4.95923 17.44 5.54684C17.4832 6.52732 17.494 6.82134 17.494 9.30074C17.494 11.7801 17.4832 12.0706 17.44 13.051V13.0498Z" />
+                                            <path
+                                                d="M9.86865 4.51953C8.92427 4.51953 8.00109 4.79952 7.21586 5.32409C6.43063 5.84866 5.81862 6.59426 5.45722 7.4666C5.09582 8.33893 5.00126 9.29882 5.1855 10.2249C5.36974 11.1509 5.8245 12.0016 6.49229 12.6692C7.16007 13.3369 8.01087 13.7916 8.93711 13.9758C9.86335 14.16 10.8234 14.0654 11.6959 13.7041C12.5684 13.3428 13.3142 12.7309 13.8388 11.9458C14.3635 11.1607 14.6435 10.2377 14.6435 9.29351C14.6432 8.02747 14.1401 6.81338 13.2447 5.91815C12.3493 5.02292 11.1349 4.51985 9.86865 4.51953ZM9.86865 12.3898C9.25616 12.3898 8.65741 12.2082 8.14814 11.8679C7.63886 11.5277 7.24193 11.0442 7.00754 10.4784C6.77315 9.91263 6.71182 9.29009 6.83132 8.68947C6.95081 8.08886 7.24575 7.53715 7.67885 7.10414C8.11195 6.67112 8.66375 6.37623 9.26448 6.25676C9.86521 6.13729 10.4879 6.19861 11.0538 6.43295C11.6196 6.6673 12.1033 7.06416 12.4436 7.57334C12.7839 8.08251 12.9655 8.68113 12.9655 9.29351C12.9652 10.1146 12.6388 10.902 12.0581 11.4826C11.4774 12.0631 10.6899 12.3894 9.86865 12.3898Z" />
+                                            <path
+                                                d="M15.945 4.32975C15.945 4.55026 15.8796 4.76582 15.7571 4.94917C15.6346 5.13252 15.4604 5.27541 15.2567 5.3598C15.0529 5.44418 14.8287 5.46626 14.6124 5.42324C14.3961 5.38022 14.1974 5.27404 14.0414 5.11812C13.8855 4.9622 13.7793 4.76354 13.7363 4.54727C13.6932 4.331 13.7153 4.10682 13.7997 3.9031C13.8841 3.69937 14.027 3.52525 14.2104 3.40275C14.3938 3.28024 14.6094 3.21484 14.8299 3.21484C15.1257 3.21484 15.4093 3.33231 15.6184 3.5414C15.8276 3.75048 15.945 4.03406 15.945 4.32975Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white/30 transition-all duration-300 hover:text-white">
+                                        <svg class="fill-current" width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3.48731 16.2549H0.0742188V4.87793H3.48731V16.2549ZM16.002 16.2549H12.5889V10.1773C12.5889 8.59365 12.0246 7.80522 10.9062 7.80522C10.02 7.80522 9.45794 8.24665 9.17579 9.13064C9.17579 10.5664 9.17579 16.2549 9.17579 16.2549H5.7627C5.7627 16.2549 5.80821 6.01563 5.7627 4.87793H8.45677L8.66496 7.15332H8.7355C9.43519 6.01563 10.5535 5.24427 12.0872 5.24427C13.2533 5.24427 14.1964 5.56851 14.9166 6.3831C15.6413 7.19883 16.002 8.29329 16.002 9.83032V16.2549Z" />
+                                            <path
+                                                d="M1.77905 3.74024C2.75297 3.74024 3.54248 2.97619 3.54248 2.03369C3.54248 1.09119 2.75297 0.327148 1.77905 0.327148C0.805139 0.327148 0.015625 1.09119 0.015625 2.03369C0.015625 2.97619 0.805139 3.74024 1.77905 3.74024Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Chose End -->
+
+        <!-- Element Start -->
+        <section class="py-[50px] sm:py-[70px] lg:py-[100px] bg-white dark:bg-dark-body demo-incluted"
+            data-scroll-section>
+            <div class="container">
+                <div class="flex items-center flex-col justify-center mb-[50px] text-center demo-incluted-heading">
+                    <span
+                        class="text-[150px] leading-none text-primary/[0.06] font-extrabold dark:text-white/20 flex items-start gap-2 -mb-[55px] dih-str">20
+                        <sup class="text-primary text-3xl">+</sup></span>
+                    <div class="text-center">
+                        <h3 class="text-4xl leading-none font-bold dih-str">Elements Included</h3>
+                        <p class="text-primary leading-none font-medium text-lg mt-4 dih-str">All Important elements
+                            available in one Templates</p>
+                    </div>
+                </div>
+                <div
+                    class="max-w-[1367px] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-5 lg:gap-[30px] demo-incluted-tags">
+                    <a class="btn btn-gray border-rounded w-full justify-center text-center dit-str"
+                        href="shortcode-team-member.html">Team</a>
+                    <a class="btn btn-gray border-rounded w-full justify-center text-center dit-str"
+                        href="shortcode-cards.html">Card</a>
+                    <a class="btn btn-gray border-rounded w-full justify-center text-center dit-str"
+                        href="shortcode-cta.html">CTA Section</a>
+                    <a class="btn btn-gray border-rounded w-full justify-center text-center dit-str"
+                        href="shortcode-steps.html">Steps</a>
+                    <a class="btn btn-gray border-rounded w-full justify-center text-center dit-str"
+                        href="shortcode-testimonial.html">Testimonial</a>
+                    <a class="btn btn-gray border-rounded w-full justify-center text-center dit-str"
+                        href="shortcode-pricing.html">Pricing</a>
+                    <a class="btn btn-gray border-rounded w-full justify-center text-center dit-str"
+                        href="shortcode-button.html">Button</a>
+                    <a class="btn btn-gray border-rounded w-full justify-center text-center dit-str"
+                        href="shortcode-contact.html">Contact</a>
+                    <a class="btn btn-gray border-rounded w-full justify-center text-center dit-str"
+                        href="shortcode-client-logo.html">Logo</a>
+                    <a class="btn btn-gray border-rounded w-full justify-center text-center dit-str"
+                        href="shortcode-slider.html">Slider</a>
+                    <a class="btn btn-gray border-rounded w-full justify-center text-center dit-str"
+                        href="shortcode-pagination.html">Pagination</a>
+                </div>
+            </div>
+        </section>
+        <!-- Element End -->
+
+        <!-- Feature Start -->
+        <section class="py-[50px] sm:py-[70px] lg:py-[100px] bg-[#F2F6FF] dark:bg-dark-body feature-area"
+            data-scroll-section>
+            <div class="container">
+                <div class="flex items-center flex-col justify-center mb-[50px] text-center">
+                    <span
+                        class="text-[150px] leading-none text-primary/[0.06] font-extrabold dark:text-white/20 flex items-start gap-2 -mb-[55px] feature-heading-sttr">10</span>
+                    <div class="text-center">
+                        <h3 class="text-4xl leading-none font-bold feature-heading-sttr">Important Features</h3>
+                        <p class="text-primary leading-none font-medium text-lg mt-4 feature-heading-sttr">All Important
+                            elements available in one Templates</p>
+                    </div>
+                </div>
+                <div class="max-w-[1100px] mx-auto feature-image-sttr">
+                    <img class="w-full" src="./assets/img/demo-page/feature.png" alt="feature">
+                </div>
+            </div>
+        </section>
+        <!-- Feature End -->
+
+        <!-- Dark Mood Start -->
+        <section class="py-[50px] sm:py-[70px] lg:py-[100px] bg-white dark:bg-dark-secondary dark-light-area"
+            data-scroll-section>
+            <div class="container">
+                <div class="flex items-center flex-col justify-center gap-5 mb-[50px] text-center">
+                    <img class="dla-heading-sttr" src="./assets/img/demo-page/dark-light.png" alt="dark-light">
+                    <div class="text-center">
+                        <h3 class="text-3xl sm:text-4xl sm:leading-none leading-none font-bold dla-heading-sttr">Dark
+                            Light Feature</h3>
+                        <p class="text-primary leading-tight sm:leading-none font-medium text-lg mt-4 dla-heading-sttr">
+                            All Important elements available in one Templates</p>
+                    </div>
+                </div>
+                <div class="max-w-[800px] mx-auto dla-image">
+                    <div class="twentytwentyImage">
+                        <img src="./assets/img/demo-page/light-theme.jpg" alt="lightTheme">
+                        <img src="./assets/img/demo-page/dark-theme.jpg" alt="darkTheme">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Feature End -->
+
+        <!-- footer Start -->
+        <section class="py-[50px] sm:py-[70px] lg:py-[100px] bg-[#0A1C35] relative z-[1]" data-scroll-section>
+            <img class="absolute -z-[1] top-1/2 left-5" src="./assets/img/demo-page/ftr-shape-01.png" alt="shape">
+            <img class="absolute -z-[1] top-1/2 right-10" src="./assets/img/demo-page/ftr-shape-04.png" alt="shape">
+            <div class="container">
+                <div
+                    class="max-w-[1366px] mx-auto demo-footer-wrap rounded-[30px] py-12 px-6 sm:p-[50px] relative z-[1] demo-purcese-area">
+                    <img class="hidden xl:block rounded-image absolute -z-[1] top-1/2 transform -translate-y-1/2 left-[5%]"
+                        src="./assets/img/demo-page/ftr-shape-02.png" alt="shape">
+                    <img class="hidden sm:block absolute -z-[1] top-1/2 transform -translate-y-1/2 right-10"
+                        src="./assets/img/demo-page/ftr-shape-03.png" alt="shape">
+                    <div
+                        class="max-w-[810px] mx-auto flex justify-center items-center text-center md:justify-between gap-6 md:items-end flex-col md:flex-row">
+                        <div class="text-center md:text-left">
+                            <h4 class="font-medium text-white text-xl sm:leading-none sm:text-2xl leading-none">Get the
+                                Best HTML Templates</h4>
+                            <h2 class="text-3xl sm:leading-none sm:text-4xl font-bold text-white leading-tight mt-3">For
+                                Multipurpose Business</h2>
+                        </div>
+                        <a class="btn btn-white border-rounded whitespace-nowrap" href="#">Purchase Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer End -->
+
+    </div>
+
+    <!-- Footer script-->
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/libs/countdown.min.js"></script>
+    <script src="./assets/js/libs/gsap-latest-beta.min.js"></script>
+    <script src="./assets/js/libs/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/libs/jquery.appear.js"></script>
+    <script src="./assets/js/libs/jquery.magnific-popup.min.js"></script>
+    <script src="./assets/js/libs/jquery.twentytwenty.js"></script>
+    <script src="./assets/js/libs/locomotive-scroll.min.js"></script>
+    <script src="./assets/js/libs/nice-select.min.js"></script>
+    <script src="./assets/js/libs/odometer.min.js"></script>
+    <script src="./assets/js/libs/owl-slider.min.js"></script>
+    <script src="./assets/js/libs/scrollTrigger.min.js"></script>
+    <script src="./assets/js/libs/custom-scroll-animation.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
